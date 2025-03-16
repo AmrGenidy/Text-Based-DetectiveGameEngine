@@ -5,7 +5,6 @@ import Core.GameContext;
 public class AskWatsonCommand implements Command {
     @Override
     public void execute(String[] args, GameContext context) {
-        // Use getBuilding() instead of getMansion()
         if (context.getWatson().getCurrentRoom().getName().equals(
                 context.getBuilding().getCurrentRoom().getName())) {
             context.getWatson().provideHint();

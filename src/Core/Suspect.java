@@ -2,8 +2,6 @@ package Core;
 
 import java.util.*;
 
-import Core.Room;
-
 public class Suspect {
     private String name;
     private String statement;
@@ -23,7 +21,7 @@ public class Suspect {
     public Room getCurrentRoom() { return currentRoom; }
     public void setCurrentRoom(Room room) { currentRoom = room; }
 
-    // Updated randomMove method to allow movement to any neighboring room
+    //randomMove method to allow movement to any neighboring room only
     public void randomMove(Building building) {
         Map<String, Room> neighbors = currentRoom.getNeighbors(); // Get neighboring rooms
         if (!neighbors.isEmpty()) {

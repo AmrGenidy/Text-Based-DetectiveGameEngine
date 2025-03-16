@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class BuildingExtractor {
     public static Building loadBuilding(CaseFile caseFile) {
-        Building building = new Building() {}; // Anonymous class for generic building
+        Building building = new Building() {};
         Map<String, Room> roomMap = new HashMap<>();
 
         // Create rooms using concrete subclasses based on JSON data

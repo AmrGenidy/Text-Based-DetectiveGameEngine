@@ -30,10 +30,8 @@ public class StartCaseCommand implements Command {
         System.out.println("\nYou are now at the starting location: " + currentRoom.getName());
         System.out.println(currentRoom.getDescription());
 
-        // Display occupants in the room
         System.out.println(context.getBuilding().getOccupantsDescription());
 
-        // Display exits of the starting room
         displayExits(currentRoom);
 
         System.out.println("\nType 'help' to see commands.");

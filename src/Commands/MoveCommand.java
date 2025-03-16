@@ -23,7 +23,7 @@ public class MoveCommand implements Command {
             return;
         }
 
-        // Update suspect and Watson movements
+        // Update suspects and Watson movements
         context.getBuilding().updateMovements(context.getWatson());
 
         // Display updated room information

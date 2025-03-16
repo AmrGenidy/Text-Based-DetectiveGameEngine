@@ -8,7 +8,7 @@ import java.util.Map;
 public abstract class Building {
     protected Map<String, Room> rooms = new HashMap<>();
     protected List<Suspect> suspects = new ArrayList<>();
-    protected DoctorWatson watson; // Add Watson as a field
+    protected DoctorWatson watson;
     protected Room currentRoom;
     protected List<CaseFile> cases;
 
@@ -34,7 +34,6 @@ public abstract class Building {
         return null;
     }
 
-    // Update suspect and Watson positions
     public void updateMovements(DoctorWatson watson) {
         // Move suspects
         for (Suspect suspect : suspects) {
@@ -50,7 +49,7 @@ public abstract class Building {
     // Set Watson in the building
     public void setWatson(DoctorWatson watson) {
         this.watson = watson;
-        this.watson.setCurrentRoom(this.currentRoom); // Sync with building's current room
+        this.watson.setCurrentRoom(this.currentRoom);
     }
 
     public String getOccupantsDescription() {
@@ -82,7 +81,6 @@ public abstract class Building {
         rooms.put(room.getName(), room); // Requires Room.getName()
     }
 
-    // Method to add a case to the building
     public void addCase(CaseFile newCase) {
         cases.add(newCase);
     }

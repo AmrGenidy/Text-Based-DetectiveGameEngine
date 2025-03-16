@@ -4,12 +4,12 @@ package Core;
 public abstract class GameObject {
     private String name;
     private String description;
-    private String examine; // Add this field
+    private String examine;
 
     public GameObject(String name, String description, String examine) {
         this.name = name;
         this.description = description;
-        this.examine = examine; // Initialize the examine field
+        this.examine = examine;
     }
 
     public String getName() { return name; }

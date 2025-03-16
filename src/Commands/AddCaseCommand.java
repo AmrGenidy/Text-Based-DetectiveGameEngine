@@ -18,7 +18,7 @@ public class AddCaseCommand implements Command {
 
         try {
             CaseFile caseFile = mapper.readValue(new File(filePath), CaseFile.class);
-            context.getBuilding().addCase(caseFile); // Use Building instead of Mansion
+            context.getBuilding().addCase(caseFile);
             System.out.println("Case '" + caseFile.getTitle() + "' added successfully!");
         } catch (Exception e) {
             System.out.println("Error loading case: " + e.getMessage());

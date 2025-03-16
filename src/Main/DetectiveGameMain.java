@@ -2,7 +2,6 @@ package Main;
 
 import Commands.Command;
 import Commands.CommandFactory;
-import Commands.MoveCommand;
 import Core.*;
 import Extractors.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -91,7 +90,7 @@ public class DetectiveGameMain {
 
         // Ensure Watson's starting room matches the player's starting room
         watson.setCurrentRoom(building.getCurrentRoom());
-        building.setWatson(watson); // Register Watson with the building
+        building.setWatson(watson);
 
         // Display case invitation immediately after selecting a case
         Letter letter = new Letter();

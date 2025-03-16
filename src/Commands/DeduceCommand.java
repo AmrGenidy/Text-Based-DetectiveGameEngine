@@ -13,9 +13,8 @@ public class DeduceCommand implements Command {
         }
 
         String objectName = args[1].toLowerCase();
-        Room currentRoom = context.getBuilding().getCurrentRoom(); // Use getBuilding()
+        Room currentRoom = context.getBuilding().getCurrentRoom();
 
-        // Ensure Room has getObject()
         GameObject obj = currentRoom.getObject(objectName);
 
         if (obj != null) {

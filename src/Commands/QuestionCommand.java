@@ -12,7 +12,7 @@ public class QuestionCommand implements Command {
         }
 
         String suspectName = args[1];
-        Suspect suspect = context.getBuilding().getSuspect(suspectName); // Now resolves
+        Suspect suspect = context.getBuilding().getSuspect(suspectName);
 
         if (suspect != null) {
             if (suspect.getCurrentRoom() == context.getBuilding().getCurrentRoom()) {

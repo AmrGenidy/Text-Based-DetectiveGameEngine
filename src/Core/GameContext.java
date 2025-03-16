@@ -33,7 +33,7 @@ public class GameContext {
 
     // Getters
     public CaseFile getSelectedCase() { return selectedCase; }
-    public Building getBuilding() { return building; } // Replaces getMansion()
+    public Building getBuilding() { return building; }
     public Detective getDetective() { return detective; }
     public DoctorWatson getWatson() { return watson; }
     public Journal getJournal() { return journal; }

@@ -15,7 +15,7 @@ public class ExamineCommand implements Command {
         String objectName = args[1].toLowerCase(); // Normalize object name
         Room currentRoom = context.getBuilding().getCurrentRoom();
 
-        // Retrieve the object from the current room
+        // Retrieve the objects from the current room
         GameObject obj = currentRoom.getObject(objectName);
 
         if (obj != null) {
